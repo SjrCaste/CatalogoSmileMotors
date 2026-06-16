@@ -113,14 +113,14 @@ main{display:block}
 .dv-halo{position:absolute;width:88%;aspect-ratio:1.5/1;border-radius:50%;
   background:radial-gradient(ellipse,rgba(245,196,0,.20),rgba(245,196,0,.04) 52%,transparent 72%);filter:blur(8px);z-index:0}
 .dv-veh img{position:relative;width:100%;max-width:600px;object-fit:contain;filter:drop-shadow(0 26px 28px rgba(0,0,0,.6));z-index:2}
-.dv-veh::after{content:"";position:absolute;left:50%;bottom:-20px;width:90%;height:120px;transform:translateX(-50%);
-  background:radial-gradient(ellipse at 30% 60%,rgba(255,255,255,.09),transparent 50%),
-             radial-gradient(ellipse at 70% 50%,rgba(255,255,255,.07),transparent 50%),
-             radial-gradient(ellipse at 50% 80%,rgba(255,255,255,.08),transparent 60%);
-  filter:blur(22px);z-index:1;pointer-events:none;animation:dv-smoke-float 8s ease-in-out infinite alternate}
+.dv-veh::after{content:"";position:absolute;left:50%;bottom:-30px;width:95%;height:160px;transform:translateX(-50%);
+  background:radial-gradient(ellipse at 25% 70%,rgba(240,240,245,.34),transparent 60%),
+             radial-gradient(ellipse at 75% 60%,rgba(235,235,240,.30),transparent 55%),
+             radial-gradient(ellipse at 50% 80%,rgba(255,255,255,.26),transparent 65%);
+  filter:blur(28px);z-index:1;pointer-events:none;animation:dv-smoke-float 7s ease-in-out infinite alternate}
 @keyframes dv-smoke-float{
-  0%{transform:translateX(-50%) scale(1) translateY(0);opacity:.8}
-  100%{transform:translateX(-48%) scale(1.08) translateY(-4px);opacity:.95}
+  0%{transform:translateX(-50%) scale(1) translateY(0);opacity:.85}
+  100%{transform:translateX(-48%) scale(1.08) translateY(-6px);opacity:1}
 }
 
 /* ---- PRODUCT ---- */
