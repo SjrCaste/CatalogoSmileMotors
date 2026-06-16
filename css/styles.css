@@ -197,12 +197,13 @@ main{display:block}
 .of-badge{position:absolute;top:15px;left:15px;z-index:4;font-family:var(--f-head);font-weight:700;
   letter-spacing:.16em;font-size:11.5px;color:#0b0b0c;background:var(--yellow);padding:6px 12px;border-radius:4px;
   box-shadow:0 4px 12px rgba(245,196,0,.25)}
-.of-media{position:relative;display:flex;align-items:flex-end;justify-content:center;padding:30px 22px 14px;min-height:258px}
+.of-media{position:relative;display:flex;align-items:flex-end;justify-content:space-around;gap:10px;padding:40px 16px 20px;min-height:258px}
 .of-halo{position:absolute;width:88%;aspect-ratio:1.7/1;border-radius:50%;
   background:radial-gradient(ellipse,rgba(245,196,0,.15),rgba(245,196,0,.03) 52%,transparent 72%);filter:blur(10px)}
-.of-main{position:relative;z-index:2;width:80%;max-width:370px;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(0,0,0,.55))}
-.of-second{position:absolute;left:12px;bottom:12px;z-index:1;width:44%;max-width:190px;object-fit:contain;
-  opacity:.96;filter:brightness(.82) drop-shadow(0 10px 14px rgba(0,0,0,.5))}
+.of-main, .of-second{position:relative;z-index:2;width:46%;max-width:220px;object-fit:contain;
+  filter:drop-shadow(0 14px 20px rgba(0,0,0,.55));transform:none;left:auto;bottom:auto;opacity:1;transition:transform .24s ease}
+.of-card:hover .of-main{transform:translateY(-6px) scale(1.03)}
+.of-card:hover .of-second{transform:translateY(-6px) scale(1.03)}
 .of-solar{position:absolute;top:14px;right:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;
   background:rgba(11,11,12,.72);border:1px solid rgba(245,196,0,.4);border-radius:6px;padding:5px 9px;backdrop-filter:blur(4px)}
 .of-solar > svg{width:30px;height:21px;flex:0 0 auto}
