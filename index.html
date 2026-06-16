@@ -26,28 +26,57 @@
 <main>
   <h1 class="sr-only">Smile Motors — Catálogo 2026</h1>
   <section class="panel cover" id="inicio" data-screen-label="Portada">
-    <div class="cov-wm" aria-hidden="true">2026</div>
+    <!-- Capa de humo animada -->
+    <div class="cov-smoke" aria-hidden="true">
+      <div class="smoke-layer s1"></div>
+      <div class="smoke-layer s2"></div>
+    </div>
     <div class="cov-inner">
       <div class="cov-grid">
+        <!-- Columna Izquierda: Título y Slogan -->
         <div class="cov-copy">
           <div class="cov-modelos">MODELOS</div>
           <div class="cov-year">2026</div>
-          <div class="cov-bar"></div>
-          <div class="cov-tag"><b>POTENCIA</b><i></i><b>INNOVACIÓN</b><i></i><b>MOVILIDAD</b></div>
+          <div class="cov-tag">
+            <span>POTENCIA</span><i></i><span>INNOVACIÓN</span><i></i><span>MOVILIDAD</span>
+          </div>
         </div>
-        <div class="cov-vehicles">
-          <div class="cov-halo"></div>
-          <img width="760" height="468" loading="eager" decoding="async" src="assets/img/p16_xmt250.png" alt="Moto Café Racer XMT250" class="v-left">
-          <img width="760" height="772" loading="eager" decoding="async" src="assets/img/div01_newpro.png" alt="Scooter eléctrico New Pro" class="v-main">
-          <img width="760" height="564" loading="eager" decoding="async" src="assets/img/p09_treck250.png" alt="Triciclo de carga Treck 250" class="v-right">
+
+        <!-- Columna Central: Vehículo Protagonista -->
+        <div class="cov-vehicle-container">
+          <div class="cov-hero-halo"></div>
+          <img width="760" height="772" loading="eager" decoding="async" src="assets/img/div01_newpro.png" alt="Scooter eléctrico New Pro" class="cov-hero-img">
+          <div class="cov-hero-shadow"></div>
+        </div>
+
+        <!-- Columna Derecha: Categorías / Sidebar Técnico -->
+        <div class="cov-categories">
+          <div class="cov-cat-line" aria-hidden="true">
+            <div class="cov-cat-node n1"></div>
+            <div class="cov-cat-node n2"></div>
+            <div class="cov-cat-node n3"></div>
+          </div>
+          <div class="cov-cat-list">
+            <button class="cov-cat-item" data-go="sec-01">
+              <span class="cov-cat-num">01</span>
+              <span class="cov-cat-label">MOTOS<br>ELÉCTRICAS</span>
+            </button>
+            <button class="cov-cat-item" data-go="sec-02">
+              <span class="cov-cat-num">02</span>
+              <span class="cov-cat-label">TRICICLOS<br>ELÉCTRICOS</span>
+            </button>
+            <button class="cov-cat-item" data-go="sec-03">
+              <span class="cov-cat-num">03</span>
+              <span class="cov-cat-label">COMBUSTIÓN<br>/ HÍBRIDOS</span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="cov-index">
-        <button class="ix" data-go="sec-01"><span class="n">01</span><span class="l">Motos<br>Eléctricas</span></button>
-        <button class="ix" data-go="sec-02"><span class="n">02</span><span class="l">Triciclos<br>Eléctricos</span></button>
-        <button class="ix" data-go="sec-03"><span class="n">03</span><span class="l">Combustión<br>e Híbridos</span></button>
+
+      <!-- Pie de Portada -->
+      <div class="cov-foot">
+        <span class="hz"></span>CATÁLOGO <b>2026</b><span class="hz"></span>
       </div>
-      <div class="cov-foot"><span class="hz"></span>CATÁLOGO <b>2026</b><span class="hz"></span></div>
     </div>
   </section>
 
