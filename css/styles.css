@@ -212,6 +212,7 @@ main{display:block}
 .sw{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:#d7d8db;
   border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 5px}
 .sw i{width:16px;height:16px;border-radius:50%;border:1px solid rgba(255,255,255,.25)}
+.sw-unique{display:inline-flex;align-items:center;font-size:12px;font-family:var(--f-head);font-weight:700;letter-spacing:.1em;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:4px 14px;background:rgba(245,196,0,.06)}
 .card-specs{margin:0 0 18px;display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
 .sp{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line2)}
 .sp dt{font-size:13.5px;color:var(--muted);margin:0}
