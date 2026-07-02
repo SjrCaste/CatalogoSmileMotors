@@ -197,10 +197,21 @@ main{display:block}
 /* ---- PRODUCT ---- */
 .panel.product { min-height: auto; padding-top: 20px; padding-bottom: 20px; }
 .pr-inner{width:100%;max-width:1200px;display:grid;grid-template-columns:1.04fr .96fr;gap:36px;align-items:center}
-.pr-media{position:relative;display:flex;align-items:center;justify-content:center;min-height:340px}
+.pr-media{position:relative;display:flex;align-items:center;justify-content:center;min-height:340px;background:#000;border-radius:12px}
 .pr-halo{position:absolute;width:90%;aspect-ratio:1.6/1;border-radius:50%;
   background:radial-gradient(ellipse,rgba(245,196,0,.16),rgba(245,196,0,.03) 52%,transparent 72%);filter:blur(10px)}
 .pr-media img{position:relative;width:100%;max-width:600px;object-fit:contain;filter:drop-shadow(0 26px 26px rgba(0,0,0,.6))}
+/* Eliminar fondo blanco/gris de imágenes con fondo incorporado */
+#prod-suzuki-ax100 .pr-media img,#prod-suzuki-125 .pr-media img,
+#prod-lifan-lycan .pr-media img,#prod-simil-supra-180 .pr-media img,
+#prod-simil-supra-200 .pr-media img,#prod-tank-150 .pr-media img,
+#prod-tank-180 .pr-media img,#prod-tank-200 .pr-media img,
+#prod-vittaci-matias .pr-media img,#prod-titan-250 .pr-media img,
+#prod-kratos-tk .pr-media img,#prod-tz-250 .pr-media img,
+#prod-ciber-250 .pr-media img,#prod-batilo-250 .pr-media img,
+#prod-xmox-rr .pr-media img,#prod-xmox-gp .pr-media img,
+#prod-puma-250 .pr-media img,#prod-kreston-250 .pr-media img,
+#prod-ava-mustang .pr-media img{filter:url(#rm-bg) drop-shadow(0 20px 30px rgba(0,0,0,.8))}
 .img-ph{position:relative;width:100%;max-width:520px;aspect-ratio:1.55/1;border:1.5px dashed var(--line);border-radius:16px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--muted)}
 .img-ph svg{width:78px;height:78px;color:var(--yellow);opacity:.7}
